@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Sourcing</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1198079352076105'); 
+    fbq('track', 'PageView');
+    // Firing ViewContent to signal the user is viewing the form
+    fbq('track', 'ViewContent', { content_name: 'Sourcing Form Wrapper', content_category: 'Service' });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1198079352076105&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+        /* 1. Global Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 2. Background & Layout 
+           - Uses min-height to allow scrolling on small screens
+           - Centers content vertically and horizontally
+        */
+        body {
+            min-height: 100vh;
+            background-color: #05080f; 
+            /* High-quality radial gradient matching your image */
+            background-image: radial-gradient(circle at 50% 0%, #1f2c45 10%, #05080f 90%);
+            background-attachment: fixed; /* Keeps background still while scrolling */
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* 3. The Form Container 
+           - Responsive width (90% on mobile, max 800px on desktop)
+           - Fixed height to keep the 'card' look, or adjust as needed
+        */
+        .tf-container {
+            width: 100%;
+            max-width: 800px; 
+            height: 600px; /* Gives the form enough room to breathe */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tf-container">
+        <!-- Typeform Embed -->
+        <div 
+            data-tf-live="01KC1MS8K7D783SS9R2X37ZWWW" 
+            data-tf-transparency="100" 
+            style="width:100%;height:100%;">
+        </div>
+    </div>
+    
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+
+</body>
+</html>
